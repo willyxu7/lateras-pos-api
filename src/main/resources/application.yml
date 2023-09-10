@@ -1,0 +1,19 @@
+server:
+  port:
+    8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/late_pos
+    username: root
+    password:
+    hikari:
+      connection-timeout: 600000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
